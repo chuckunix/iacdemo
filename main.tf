@@ -6,11 +6,11 @@ module "vcn01" {
 	display_name = var.vcn01_display_name
 }
 
-module "vcn002" {
+module "vcn0002" {
 	source = "./vcn_module"
 	display_name = "vcn002"
 	cidr_block	= "172.0.0.0/24"
 	compartment_id	= var.compartment_ocid
-	dns_label = "vcn002"
+	dns_label = "vcn0002"
 }
 
